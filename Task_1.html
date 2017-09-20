@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Task_1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+	
+	
+<style>
+  a.button1 {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: -1px -1px #000;
+  user-select: none;
+  padding: .8em 2em;
+  outline: none;
+  background-color: #000;
+  background-image: linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) 50%, rgba(0,0,0,0) 50%);
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto;
+  background-position: 200% 0, 0 0;
+  box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+} 
+a.button1:active {
+  top: 1px;
+  box-shadow: none;
+}
+a.button1:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0;
+}
+</style>
+
+
+	
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Тестовое задание Instictools</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="C:/Users/yarma/Desktop/Instictools_test/index.html">Home
+               
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Task 1
+				<span class="sr-only">(current)</span>
+			  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:/Users/yarma/Desktop/Instictools_test/Task_2.html">Task 2</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="C:/Users/yarma/Desktop/Instictools_test/Task_3.html">Task 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+	<section>
+		<div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+				<div class="row align-items-center">
+					<div class="col-md-6 order-1">
+					<h4><em>Входные данные</em></h4>
+					<br><br><br><br>
+					</div>
+					
+					<div class="col-md-6 order-2">
+					<input title="Введите 1 массив чисел (через пробел)" placeholder="1 2 3" type="text" name="arr1" id="arr1" size="30" ><br><br>
+					<input title="Введите 2 массив чисел (через пробел)" placeholder="4 5 6 8" type="text" name="arr2" id="arr2" size="30"><br><br>
+					<input title="Введите 3 массив чисел (через пробел)" placeholder="7 8 9" type="text" name="arr3" id="arr3" size="30"><br><br>
+					<a href="#" class="button1" id="btn_1">Сложить</a>
+					<br><br>
+					<input title="Результат поэлементного сложения массивов" type="text" name="arrRes" id="arrRes" size="30">
+					</div>	
+				</div>		
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h2 class="display-4">Задание 1:</h2>
+              <p>Даны 3 массива произвольной длины с произвольными данными. Создать новый массив, который будет содержать суммы элементов соответствующих массивов. Длины массивов могут не совпадать друг с другом, значения в массивах могут быть не числовыми.</p>
+		   </div>
+          </div>
+        </div>
+      </div>
+	</section>
+
+	<!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white"></p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	
+	<script src="Task_1.js"></script>
+<script>
+document
+	.getElementById("btn_1")
+	.addEventListener('click', function(){ firstSolution();})
+	;
+</script>
+
+  </body>
+
+</html>
