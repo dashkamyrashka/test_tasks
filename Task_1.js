@@ -9,11 +9,29 @@ function firstSolution(){
         arr1 = value1.split(" ");
         arr2 = value2.split(" ");
         arr3 = value3.split(" ");
+		
+		
+		  //нахождение максимального размера массива
+        function maxLength(a, b, c) {
+            if (a >= b && a >= c)
+                max = a;
+            else {
+                if (b >= a && b >= c)
+                    max = b;
+                else
+                    max = c;
+            }
+            return max;
+        }
 
 		//заполнение массива 0
-        function fill(arr) {
+        
+		function fill(arr) {
             if (arr.length < maxLength(arr1.length, arr2.length, arr3.length)) {
-                arr.push("0");
+               //for (int i = arr.length; i < maxLength(arr1.length, arr2.length, arr3.length); i++)
+				//{
+					arr.push("0");
+				//}
             }
             return arr;
         }
@@ -35,9 +53,9 @@ function firstSolution(){
 				//	arr33[i] = 0;
 				//}-->
 			//	else
-							//ArrResult[i] = (((+arr1[i]) == NaN) ? arr1[i].toString() : (+arr1[i])) + (((+arr2[i]) == NaN) ? arr2[i].toString() : (+arr2[i])) + (((+arr3[i]) == NaN) ? arr3[i].toString() : (+arr3[i]));
+							ArrResult[i] = (((+arr1[i]) == NaN) ? arr1[i].toString() : (+arr1[i])) + (((+arr2[i]) == NaN) ? arr2[i].toString() : (+arr2[i])) + (((+arr3[i]) == NaN) ? arr3[i].toString() : (+arr3[i]));
 
-				ArrResult[i] = (+arr11[i]) + (+arr22[i]) + (+arr33[i]);
+				//ArrResult[i] = (+arr11[i]) + (+arr22[i]) + (+arr33[i]);
         }
 
 		
@@ -46,15 +64,4 @@ function firstSolution(){
 		}
 }
 
-        //нахождение максимального размера массива
-        function maxLength(a, b, c) {
-            if (a >= b && a >= c)
-                max = a;
-            else {
-                if (b >= a && b >= c)
-                    max = b;
-                else
-                    max = c;
-            }
-            return max;
-        }
+      
